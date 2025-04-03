@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div id="fixe">
+                <div id="navG">
+                    <p>Abdallah AMMOUCHI</p>
+                </div>
+                <div id="navD">
+                    <div class="burger">&#9776;</div>
+                    <aside>
+                        <ul>
+                            <li><a href="#propos" >À propos</a></li>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#projects">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- <div id="modeDark">
+                    <button id="darkModeToggle">🌙</button>
+                </div> -->
+            </div>
+          
+        </nav>
+        <main>
+            <div>
+                <section id="presentation">
+
+                    <h1>Abdallah AMMOUCHI</h1>
+                    <p>Concepteur-Développeur d'Applications <br> Web et Mobile</p>
+                    <a href="#contact" class="button">Contactez-moi</a>
+                </section>
+            </div>
+        </main>
+    </header>
+
+    <section id="propos">
+        <div id="about">
+            <h2>À propos de moi</h2>
+            <p>Passionné par le développement web, j'ai suivi un parcours intensif de formation à l'AFPA Amiens, où j'ai
+                acquis une expertise en conception et développement d'applications web et mobiles. Mon apprentissage m'a
+                permis de maîtriser aussi bien le front-end que le back-end, avec une approche axée sur la performance,
+                l'ergonomie et l'expérience utilisateur.</p>
+
+            <p>Au fil de mes projets, j'ai développé une solide compréhension des technologies modernes et des bonnes
+                pratiques du développement. Créatif, rigoureux et toujours en quête d'apprentissage, je mets mes
+                compétences au service de solutions innovantes et efficaces.</p>
+
+            <p>Je suis à la recherche de nouvelles opportunités pour collaborer sur des projets ambitieux. N'hésitez pas
+                à me contacter !</p>
+
+            <!--<div id="cv">
+                <a href="mailto:ammouchiabdallah@gmail.com" class="button">Voir mon CV</a>
+            </div>-->
+            <div id="cv">
+                <a href="assets/doc/CV_AMMOUCHI.pdf" class="button" download="cv_amouchi.pdf" target="_blank">
+                    📄 Télécharger mon CV
+                </a>
+            </div>
+        </div>
+        <div id="photo">
+            <img src="assets/img/photo.jpg" alt="Photo de Abdallah AMMOUCHI">
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Compétences</h2>
+
+        <div id="content">
+            <div class="skills-content">
+                <h3>Langages de programmation</h3>
+                <ul>
+                    <li>
+                        <P>PHP</P>
+                        <img src="assets/img/php.png" alt="PHP" width="50">
+
+                    </li>
+                    <li>
+                        <P>JS</P>
+                        <img src="assets/img/java-script.png" alt="JavaScript" width="50">
+
+                    </li>
+                    <li>
+                        <p>HTML</p>
+                        <img src="assets/img/html.png" alt="HTML" width="50">
+
+                    </li>
+                    <li>
+                        <p>CSS</p>
+                        <img src="assets/img/css.png" alt="CSS" width="50">
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="skills-content">
+                <h3>Frameworks et bibliothèques</h3>
+                <ul>
+                    <li>
+                        <p>Symfony</p>
+                        <img src="assets/img/symfony.png" alt="Symfony" width="50">
+
+                    </li>
+                    <li>
+                        <p>React</p>
+                        <img src="assets/img/react.png" alt="React" width="50">
+
+                    </li>
+                    <li>
+                        <p>Bootstrap</p>
+                        <img src="assets/img/bootstrap.png" alt="Bootstrap" width="50">
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="skills-content">
+                <h3>Bases de données</h3>
+                <ul>
+                    <li>
+                        <p>MariaDB</p>
+                        <img src="assets/img/mariadb.png" alt="MariaDB">
+
+                    </li>
+                    <li>
+                        <p>MySQL</p>
+                        <img src="assets/img/mysql.png" alt="MySQL">
+
+                    </li>
+                    <li>
+                        <p>MongoDB</p>
+                        <img src="assets/img/mongodb.png" alt="MongoDB">
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills-content">
+                <h3>Outils et technologies</h3>
+                <ul>
+                    <li>
+                        <p>Git</p>
+                        <img src="assets/img/git.png" alt="Git">
+
+                    </li>
+                    <li>
+                        <p>Docker</p>
+                        <img src="assets/img/docker.png" alt="Docker">
+
+                    </li>
+                    <li>
+                        <p>API REST</p>
+                        <img src="assets/img/api.png" alt="API REST">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <p>Voici quelques exemples de projets réalisés au cours de la formation, du stage et de mon temps libre :</p>
+        <div id="projects-list">
+            <div class="project-item" data-title="Village Green"
+                data-description="Site e-commerce complet permettant l'achat de mobilier pour particuliers et professionnels."
+                data-technologies="Symfony, Twig, Doctrine, Bootstrap, JavaScript, MySQL, Git, Looping, Figma"
+                data-missions="Étude du cahier des charges, Conception de la base de données avec Looping, Maquettage avec Figma, Développement Back-end et Front-end, Gestion des utilisateurs et commandes, Optimisation et Sécurisation, Mise en place d'un espace administrateur, Tests end-to-end"
+                data-site="https://villagegreen.com" data-github="https://github.com/tonrepo/greenvillage">
+
+                <img src="assets/img/villageGreen1.png" alt="Projet GreenVillage">
+                <div class="overlay">
+                    <p>Voir plus</p>
+                </div>
+            </div>
+            <div class="project-item" data-title="Valtra-intranet"
+                data-description="Refonte et optimisation de la plateforme de gestion Valtra-intranet pour améliorer la gestion des utilisateurs, des stocks et des commandes."
+                data-technologies="PHP, JavaScript, jQuery, MySQL, Git, FileZilla"
+                data-missions="Étude du cahier des charges, Développement Front-end, Développement Back-end, Gestion des utilisateurs, Sécurisation des accès, Tests et validation, Déploiement via FileZilla"
+                data-site="https://valtra-intranet.com" data-github="https://github.com/tonrepo/valtra-intranet">
+
+                <img src="assets/img/valtra.png" alt="Projet Valtra-intranet">
+                <div class="overlay">
+                    <p>Voir plus</p>
+                </div>
+            </div>
+            <div class="project-item" data-title="Pro-Invest"
+                data-description="Application back-office permettant la gestion des investisseurs, des projets et des transactions financières avec des graphiques et un système de tri avancé."
+                data-technologies="PHP, Symfony, JavaScript, jQuery, MySQL, Bootstrap, Chart.js"
+                data-missions="Développement Back-end et Front-end, Gestion des investisseurs et projets, Mise en place des formulaires, Intégration des graphiques, Optimisation et sécurisation"
+                data-site="https://pro-invest.com" data-github="https://github.com/tonrepo/pro-invest">
+
+                <img src="assets/img/proInvest.png" alt="Projet Pro-Invest">
+                <div class="overlay">
+                    <p>Voir plus</p>
+                </div>
+            </div>
+            <div class="project-item" data-title="Gestion de Parking"
+                data-description="Application web permettant de gérer les véhicules stationnés, les paiements et les réservations avec un suivi statistique du chiffre d’affaires."
+                data-technologies="PHP, JavaScript, jQuery, MySQL, HTML, CSS"
+                data-missions="Développement Back-end et Front-end, Mise en place du système de paiement, Gestion des réservations et des utilisateurs, Création du module de statistiques, Optimisation et sécurisation"
+                data-site="https://parking-app.com" data-github="https://github.com/tonrepo/parking-app">
+
+                <img src="assets/img/parking.png" alt="Projet Gestion de Parking">
+                <div class="overlay">
+                    <p>Voir plus</p>
+                </div>
+            </div>
+           
+        </div>
+        <div id="projectModal" class="modal">
+            <div class="centered">
+                <div class="modal-content">
+                    <h2 id="modal-title">Titre du projet</h2>
+        
+                    <p id="modal-description"></p>
+                    <p id="modal-technologies"></p>
+                    <p id="modal-missions"></p>
+        
+                    <div class="modal-links">
+                        <a id="modal-site" href="#" target="_blank">🔗 Voir le site</a>
+                        <a id="modal-github" href="#" target="_blank">📂 Voir le dépôt GitHub</a>
+                    </div>
+                </div>
+                <div id="modal-close">
+                    <div class="close">&times;</div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter pour toute collaboration ou question.</p>
+            
+            <form action="send_message.php" method="POST">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                </div>
+                
+                    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+    
+            <div class="contact-info">
+                <p><strong>Email :</strong> <a href="mailto:ammouchiabdallah@gmail.com">ammouchiabdallah@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> +33 6 52 96 36 13</p>
+                <p><strong>Réseaux :</strong> 
+                    <a href="https://www.linkedin.com/in/abdallah-ammouchi-1a3124326" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/AMMOUCHI23" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                &copy; 2025 AMMOUCHI. Tous droits réservés.
+            </div>
+    
+            <div class="footer-links">
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+    
+            <div class="footer-social">
+                <a href="https://github.com/AMMOUCHI23" target="_blank">
+                    <img src="assets/img/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/abdallah-ammouchi-1a3124326/" target="_blank">
+                    <img src="assets/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:ammouchiabdallah@gmail.com">
+                    <img src="assets/img/email.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
