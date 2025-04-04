@@ -244,27 +244,36 @@
     </section>
 
     <section id="contact">
+        <h2>Contactez-moi</h2>
         <div class="container">
-            <h2>Contactez-moi</h2>
+            
             <p>N'hésitez pas à me contacter pour toute collaboration ou question.</p>
             
-            <form action="https://formspree.io/f/mvgkwzbe" method="POST">
+            <form action="https://formspree.io/f/mvgkwzbe" method="POST" id="myForm">
                 <div class="input-group">
-                    <input type="text" name="name" placeholder="Votre nom" required>
-                    <input type="email" name="email" placeholder="Votre email" required>
+                   
+                        <input type="text" name="name" id="name" placeholder="Votre nom" >
+                    <p class="error" id="nameError"></p>
+                    
+                   
+                        <input type="email" name="email" id="email" placeholder="Votre email" >
+                    <p class="error" id="emailError"></p>
+                    
+                   
                 </div>
                 
-                    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                    <textarea name="message" rows="5" id="message" placeholder="Votre message" ></textarea>
+                    <p class="error" id="messageError"></p>
                 
                 <button type="submit" class="button">Envoyer</button>
             </form>
     
             <div class="contact-info">
                 <p><strong>Email :</strong> <a href="mailto:ammouchiabdallah@gmail.com">ammouchiabdallah@gmail.com</a></p>
-                <p><strong>Téléphone :</strong> +33 6 52 96 36 13</p>
+                <p><strong>Téléphone :</strong> <span>+33 6 52 96 36 13</span></p>
                 <p><strong>Réseaux :</strong> 
-                    <a href="https://www.linkedin.com/in/abdallah-ammouchi-1a3124326" target="_blank">LinkedIn</a> |
-                    <a href="https://github.com/AMMOUCHI23" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/abdallah-ammouchi-1a3124326" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a> |
+                    <a href="https://github.com/AMMOUCHI23" target="_blank"><img src="assets/img/github.png" alt="GitHub"></a>
                 </p>
             </div>
         </div>
@@ -301,6 +310,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/contactForm.js"></script>
 </body>
 
 </html>
