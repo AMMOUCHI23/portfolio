@@ -23,6 +23,7 @@ nav #fixe {
     height: 80px;
     border-bottom: 1px solid white;
     z-index: 100;
+    
 }
 
 nav #navG {
@@ -87,9 +88,10 @@ nav aside ul li a.active {
     transition: color 0.3s;
 }
 
+
 /*****************section presentation*****************/
 section {
-    padding: 30px 20px;
+     padding: 30px 20px; 
 
 }
 
@@ -100,14 +102,39 @@ section {
     align-items: center;
 
     /* background: linear-gradient(45deg, #ffff00 2%, #ff8000); */
-    background-color: #ECF0F1;
-    color: #34495E;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* color: #34495E; */
+    color: #fff;
     height: 500px;
-
+    margin-top: 81px;
     text-align: center;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
+#presentation::after{
+    content: '';
+    display: block;
+    background-image: url('../img/fond.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    animation: zoom 20s infinite;
 
+}
+@keyframes zoom {
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 #presentation h1 {
     margin: 0;
     padding: 0;
@@ -140,13 +167,29 @@ section {
     transform: translateY(5px);
     box-shadow: none;
 }
+main {
+    position: relative;
+    z-index: 1;
+    
+}
+/******************barre de scroll*****************/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #2C3E50;
+   
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3498DB;
+    
+    box-shadow: 5px -100vh 5px  100vh #FFD700;
+}
 
 /*****************section à propos*****************/
 #propos {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BDC3C7;
+    background-color: #ECF0F1;
     color: #2C3E50;
 
 }
@@ -683,9 +726,17 @@ footer {
     /*****************section présentation*****************/
 
     #presentation {
+        margin-top: 60px;
         height: 300px;
     }
-
+    #presentation::after{
+       
+        background-image: url('../img/fondMobile.jpg');
+       
+        height: 300px;
+        
+    
+    }
     #presentation h1 {
         font-size: 30px;
     }
