@@ -175,13 +175,13 @@ main {
 /******************barre de scroll*****************/
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: #2C3E50;
+    background-color: #FFD700;;
    
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #3498DB;
+    background-color: #2C3E50;
     
-    box-shadow: 5px -100vh 5px  100vh #FFD700;
+    
 }
 
 /*****************section à propos*****************/
@@ -475,6 +475,7 @@ h3 {
     font-size: 30px;
     color: white;
     font-weight: bold;
+    
 }
 
 
