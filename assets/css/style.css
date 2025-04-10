@@ -91,6 +91,7 @@ nav aside ul li a.active {
 
 /*****************section presentation*****************/
 section {
+    
      padding: 30px 20px; 
 
 }
@@ -102,9 +103,10 @@ section {
     align-items: center;
 
     /* background: linear-gradient(45deg, #ffff00 2%, #ff8000); */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     /* color: #34495E; */
     color: #fff;
+    text-shadow: 0 0 2px #000;
     height: 500px;
     margin-top: 81px;
     text-align: center;
@@ -139,11 +141,14 @@ section {
     margin: 0;
     padding: 0;
     font-size: 3em;
+    letter-spacing: 4px;
     font-weight: bold;
 }
 
 #presentation p {
     font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 35px;
     margin: 10px 0;
 
 }
@@ -577,17 +582,19 @@ h3 {
 }
 #contact .contact-info a:hover {
     text-decoration: underline;
+    
 }
 #contact .contact-info img {
     width: 30px;
     height: 30px;
     vertical-align: middle;
-    background-color: #FFD700;
+    background-color: #fff;
     object-fit: cover;
 }
 #contact .contact-info img:hover {
     transform: scale(1.2);
     transition: all 0.5s;
+    background-color: #FFD700;
 }
 
 
@@ -654,11 +661,13 @@ footer {
 .footer-social img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s;
     background-color: #FFD700;
+    transition: transform 0.3s;
+   
 }
 
 .footer-social img:hover {
+    background-color: #fff;
     transform: scale(1.2);
 }
 
@@ -738,10 +747,13 @@ footer {
     }
     #presentation h1 {
         font-size: 30px;
+        letter-spacing: 2px;
     }
 
     #presentation p {
         font-size: 20px;
+        letter-spacing: 1px;
+        
     }
 
     #presentation a {

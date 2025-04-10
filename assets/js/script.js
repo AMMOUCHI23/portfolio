@@ -1,10 +1,10 @@
 
 $(document).ready(function () {
 
-    
+    // Scroll vers le haut de la page
     $("#navG p").on("click", function(e) {
-        e.preventDefault(); // Empêche le comportement par défaut s'il y en a un
-        $("html, body").animate({ scrollTop: 0 }, 800); // 800 ms pour l'animation
+        e.preventDefault(); 
+        $("html, body").animate({ scrollTop: 0 }, 800); 
     });
     var sections = $("section[id]");
     // Récupère tous les liens de la navigation dans l'aside
@@ -18,7 +18,7 @@ $(document).ready(function () {
         sections.each(function() {
             var sectionTop = $(this).offset().top;
             // Ajuste la valeur 60 selon ton design (décalage pour déclencher le changement)
-            if (scrollPos >= sectionTop - 60) {
+            if (scrollPos >= sectionTop -60) {
                 currentSection = $(this).attr("id");
             }
         });
@@ -26,11 +26,12 @@ $(document).ready(function () {
         // Met à jour les classes des liens en fonction de la section active
         navLinks.each(function() {
             $(this).removeClass("active");
-            // Si le href du lien correspond à la section active, on ajoute la classe "active"
-            if ($(this).attr("href").indexOf(currentSection) !== -1) {
+        
+            if (currentSection && $(this).attr("href").indexOf(currentSection) !== -1) {
                 $(this).addClass("active");
             }
         });
+        
     });
 
 
