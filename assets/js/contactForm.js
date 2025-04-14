@@ -38,7 +38,7 @@ $(document).ready(function() {
         }
         // Vérification message
         let message = $("#message").val();
-        let messageRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9.,!?'"()\- ]{5,}$/;
+        let messageRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9.,;!?'"()\- \n\r]{5,}$/;
         if (message.length == 0) {
             $("#messageError").html("Le message est requis");
             $("#message").addClass("error-border");
