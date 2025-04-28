@@ -60,7 +60,10 @@ nav #navD a {
     font-size: 20px;
     text-decoration: none;
 }
-
+nav #navD a:hover {
+    color: #FFD700;
+    transition: all 0.5s;
+}
 nav .burger {
     display: none;
     cursor: pointer;
@@ -106,7 +109,7 @@ section {
     background-color: rgba(0, 0, 0, 0.4);
     /* color: #34495E; */
     color: #fff;
-    text-shadow: 0 0 2px #000;
+ 
     height: 500px;
     margin-top: 81px;
     text-align: center;
@@ -138,19 +141,25 @@ section {
     }
 }
 #presentation h1 {
+    text-shadow: 0 0 2px #000;
     margin: 0;
     padding: 0;
     font-size: 3em;
     letter-spacing: 4px;
-    font-weight: bold;
+ 
 }
 
-#presentation p {
+#presentation h3 {
     font-size: 30px;
     letter-spacing: 2px;
     line-height: 35px;
     margin: 10px 0;
+    color: #ccc;/* #FFD700;*/
+    text-shadow: 0 0px 2px #000;
 
+}
+#presentation h3:hover{
+    color:#fff;
 }
 
 .button {
@@ -180,11 +189,11 @@ main {
 /******************barre de scroll*****************/
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: #FFD700;;
+    background-color: #2C3E50;
    
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #2C3E50;  
+    background-color: #FFD700;  
 }
 
 /*****************section à propos*****************/
@@ -698,6 +707,10 @@ footer {
         display: block;
         align-items: center;
 
+    }
+    nav .burger:hover {
+        color: #FFD700;
+        transition: all 0.5s;
     }
 
     nav aside {
